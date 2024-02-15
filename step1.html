@@ -17,13 +17,14 @@
         <div class="header">
             <a href="index.html" class="logo"><img src="assets/logo.png"></a>
             <div class="nav">
-                <nav class="pc">
+                <nav class="pc" id="navbar">
                     <a href="index.html" class="nav-list">Home</a>
                     <a href="" class="nav-list">About</a>
                     <a href="started.html" class="nav-list">Get started</a>
-                    <a  href="https://quizapi.io/" target="_blank" class="nav-list">Learn more</a>
+                    <a href="https://quizapi.io/" target="_blank" class="nav-list">Learn more</a>
+                    <div class="close mobile" onclick="mobNavclose()">✖</div>
                 </nav>
-                <div class="menu-open mobile"><img src="assets/menu.png"></div>
+                <div class="menu-open mobile" id="mobnav" onclick="mobNav()"><img src="assets/menu.png"></div>
             </div>
         </div>
     </header>
@@ -70,6 +71,7 @@
             </div>
      
     </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>
